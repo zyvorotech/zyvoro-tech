@@ -38,25 +38,58 @@ export default function ZyvoroTechPortfolio() {
     },
   ];
 
+  const logoUrl =
+    "https://i.ibb.co/YBLY6Tt/zyvoro-logo.png";
+
   return (
     <div className="min-h-screen bg-black text-white font-sans">
       {/* Navbar */}
-      <header className="flex items-center justify-between px-8 py-5 border-b border-gray-800 sticky top-0 bg-black/90 backdrop-blur z-50">
-        <h1 className="text-2xl font-bold tracking-wide text-cyan-400">
-          Zyvoro Tech
-        </h1>
+      <header className="flex flex-col md:flex-row items-center justify-between gap-4 px-4 md:px-8 py-5 border-b border-gray-800 sticky top-0 bg-black/90 backdrop-blur z-50">
 
-        <nav className="hidden md:flex gap-8 text-sm text-gray-300">
-          <a href="#home" className="hover:text-cyan-400 transition">
+        <div className="flex items-center gap-4">
+          <img
+            src={logoUrl}
+            alt="Zyvoro Tech Logo"
+            className="w-16 h-16 md:w-20 md:h-20 object-cover rounded-full border-2 border-cyan-400 shadow-[0_0_35px_rgba(34,211,238,0.9)] bg-black"
+          />
+
+          <div>
+            <h1 className="text-2xl md:text-3xl font-bold tracking-wide text-cyan-400">
+              Zyvoro Tech
+            </h1>
+
+            <p className="text-gray-400 text-xs md:text-sm tracking-[0.2em] uppercase">
+              Future Digital Solutions
+            </p>
+          </div>
+        </div>
+
+        <nav className="flex gap-3 md:gap-8 text-[11px] md:text-sm text-gray-300 font-medium flex-wrap justify-center">
+          <a
+            href="#home"
+            className="hover:text-cyan-400 transition border border-gray-700 px-3 py-2 rounded-xl"
+          >
             Home
           </a>
-          <a href="#services" className="hover:text-cyan-400 transition">
+
+          <a
+            href="#services"
+            className="hover:text-cyan-400 transition border border-gray-700 px-3 py-2 rounded-xl"
+          >
             Services
           </a>
-          <a href="#projects" className="hover:text-cyan-400 transition">
+
+          <a
+            href="#projects"
+            className="hover:text-cyan-400 transition border border-gray-700 px-3 py-2 rounded-xl"
+          >
             Projects
           </a>
-          <a href="#contact" className="hover:text-cyan-400 transition">
+
+          <a
+            href="#contact"
+            className="hover:text-cyan-400 transition border border-gray-700 px-3 py-2 rounded-xl"
+          >
             Contact
           </a>
         </nav>
@@ -65,30 +98,32 @@ export default function ZyvoroTechPortfolio() {
       {/* Hero Section */}
       <section
         id="home"
-        className="relative flex flex-col items-center justify-center text-center px-6 py-28 overflow-hidden"
+        className="relative flex flex-col items-center justify-center text-center px-6 py-24 md:py-32 overflow-hidden"
       >
         <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-transparent to-blue-500/20 blur-3xl" />
 
-        <div className="relative z-10 max-w-4xl">
-          <p className="uppercase tracking-[0.3em] text-cyan-400 text-sm mb-5">
+        <div className="relative z-10 max-w-5xl">
+          <p className="uppercase tracking-[0.35em] text-cyan-400 text-xs md:text-sm mb-5">
             Building Future Digital Solutions
           </p>
 
-          <h2 className="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+          <h2 className="text-4xl md:text-7xl font-extrabold leading-tight mb-6">
             Modern Websites
             <br />
             For Modern Businesses
           </h2>
 
-          <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-gray-400 text-base md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
             Zyvoro Tech helps startups, brands, and businesses grow online
-            with premium websites, digital solutions, and IT services.
+            with premium websites, digital solutions, SEO optimization, and
+            powerful business branding.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center">
             <a
               href="https://wa.me/918527169719"
               target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 rounded-2xl bg-cyan-400 text-black font-semibold hover:scale-105 transition"
             >
               Contact on WhatsApp
@@ -108,9 +143,9 @@ export default function ZyvoroTechPortfolio() {
       <section id="services" className="px-6 py-24 max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h3 className="text-4xl font-bold mb-4">Our Services</h3>
+
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Professional digital services designed to help your business grow
-            online.
+            Professional digital services designed to help your business grow online.
           </p>
         </div>
 
@@ -123,6 +158,7 @@ export default function ZyvoroTechPortfolio() {
               <h4 className="text-2xl font-semibold mb-4 text-cyan-400">
                 {service.title}
               </h4>
+
               <p className="text-gray-400 leading-relaxed">
                 {service.description}
               </p>
@@ -136,6 +172,7 @@ export default function ZyvoroTechPortfolio() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h3 className="text-4xl font-bold mb-4">Recent Projects</h3>
+
             <p className="text-gray-400">
               Premium website concepts created by Zyvoro Tech.
             </p>
@@ -157,6 +194,7 @@ export default function ZyvoroTechPortfolio() {
                   <h4 className="text-2xl font-semibold mb-2">
                     {project.name}
                   </h4>
+
                   <p className="text-gray-400">
                     Responsive and modern UI design built for online growth.
                   </p>
@@ -173,7 +211,9 @@ export default function ZyvoroTechPortfolio() {
         className="px-6 py-24 bg-gradient-to-br from-cyan-500/10 to-blue-500/10"
       >
         <div className="max-w-4xl mx-auto text-center">
-          <h3 className="text-5xl font-bold mb-6">Let’s Build Your Website</h3>
+          <h3 className="text-5xl font-bold mb-6">
+            Let’s Build Your Website
+          </h3>
 
           <p className="text-gray-300 text-lg mb-10">
             Ready to grow your business online? Contact Zyvoro Tech today.
@@ -197,7 +237,7 @@ export default function ZyvoroTechPortfolio() {
         </div>
       </section>
 
-      {/* Floating WhatsApp Button */}
+      {/* WhatsApp Button */}
       <a
         href="https://wa.me/918527169719"
         target="_blank"
