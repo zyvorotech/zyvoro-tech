@@ -38,30 +38,19 @@ export default function ZyvoroTechPortfolio() {
     },
   ];
 
-  const logoUrl =
-    "https://i.ibb.co/YBLY6Tt/zyvoro-logo.png";
-
   return (
     <div className="min-h-screen bg-black text-white font-sans">
       {/* Navbar */}
       <header className="flex flex-col md:flex-row items-center justify-between gap-4 px-4 md:px-8 py-5 border-b border-gray-800 sticky top-0 bg-black/90 backdrop-blur z-50">
+        
+        <div>
+          <h1 className="text-2xl md:text-3xl font-bold tracking-wide text-cyan-400 text-center md:text-left">
+            Zyvoro Tech
+          </h1>
 
-        <div className="flex items-center gap-4">
-          <img
-            src={logoUrl}
-            alt="Zyvoro Tech Logo"
-            className="w-16 h-16 md:w-20 md:h-20 object-cover rounded-full border-2 border-cyan-400 shadow-[0_0_35px_rgba(34,211,238,0.9)] bg-black"
-          />
-
-          <div>
-            <h1 className="text-2xl md:text-3xl font-bold tracking-wide text-cyan-400">
-              Zyvoro Tech
-            </h1>
-
-            <p className="text-gray-400 text-xs md:text-sm tracking-[0.2em] uppercase">
-              Future Digital Solutions
-            </p>
-          </div>
+          <p className="text-gray-400 text-xs md:text-sm tracking-[0.2em] uppercase text-center md:text-left">
+            Future Digital Solutions
+          </p>
         </div>
 
         <nav className="flex gap-3 md:gap-8 text-[11px] md:text-sm text-gray-300 font-medium flex-wrap justify-center">
