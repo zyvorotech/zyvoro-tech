@@ -210,10 +210,10 @@ export default function ZyvoroTechPortfolio() {
 
           <div className="flex flex-col md:flex-row justify-center gap-6">
             <a
-              href="mailto:ZyvoroTech2026@gmail.com"
+              href="mailto:contact@zyvorotech.com"
               className="px-8 py-4 rounded-2xl bg-cyan-400 text-black font-semibold hover:scale-105 transition"
             >
-              ZyvoroTech2026@gmail.com
+              contact@zyvorotech.com
             </a>
 
             <a
